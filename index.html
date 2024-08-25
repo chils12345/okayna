@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Portfolio</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" onclick="closeNav()">Close &times;</a>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<button class="open-btn" onclick="openNav()">&#9776; </button>
+
+<div class="content">
+    <section id="home">
+        <h1>Hi I'm Chilsey!</h1>
+        <p>This portfolio showcases my skills and projects. Enjoy this introductory video!</p>
+        <div class="video-container">
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Me</h1>
+       
+    
+    <img class="me" src="me2.jfif" alt="use Data to see photos"><br>
+    <a href="tirang.html">Want to know me more?</a>
+        <hr>
+        <h2>Personal Data</h2>
+        <p><b>Name: </b>Chilsey Kaye Cosicol Palecpec</p>
+        <p><b>Age: </b>30 Years old </b></p>
+        <p><b>Gender: </b>Female</p><hr>
+        <h2>Parent's Information</h2>
+        <p><b>Mother's Name: </b>Josephine Cosicol Palecpec</p>
+        <p><b>Father's Name: </b>Froilan Fontanilla Palecpec</p>
+
+       <hr>
+        <h2>Education</h2>
+        <p><b>Elementary: </b> Pagadian City Pilot School</p>
+        <p><b>High School: </b>Zamboanga Del Sur National High School-Junior High School</p>
+        <p><b>Senior High: </b>Zamboanga Del Sur National High School-Senior High School</p>
+        <p><b>College: </b>Zamboanga Del Sur Provincial Government College</p>
+        <br><hr>
+        
+        <h2>Skills</h2>
+        <ul>
+            <li>Mudulag ML</li>
+            <li>Maglaag2</li>
+            <li>Muluto usahay</li>
+            <li>Lutang</li>
+            <li>Tangaon na driver</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+      
+        <div class="container">
+            <div style="text-align:center">
+              <h2>Contact Me</h2>
+              <hr>
+              <p> Leave me a message:</p>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="me3.jfif" >
+              </div>
+              <div class="column">
+                <form action="/action_page.php">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="usa">Philippines</option>
+                    <option value="usa">Germany</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                 
+                </form><br>
+        <p>I'd love to hear from you! Reach out through the following platforms:</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/kelszey888" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://x.com/" target="_blank" class="fa fa-twitter"></a>
+            <a href="https://google.com/" target="_blank" class="fa fa-google"></a>
+            <a href="https://linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/" target="_blank" class="fa fa-youtube"></a>
+            <a href="https://instagram.com/"  target="_blank" class="fa fa-instagram"></a>
+            <a href="https://pinterest.com/" target="_blank" class="fa fa-pinterest"></a>
+            <a href="https://snapchat.com/" target="_blank" class="fa fa-snapchat-ghost"></a>
+        </div>
+        <hr >
+        
+        
+        
+    </section>
+</div>
+
+<footer>
+    <p>Developer: Chilsey Kaye C. Palecpec<br>
+    <a href="mailto:pchilseykaye@gmail.com">chilseykayepalecpec</a></p>
+  </footer>
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.querySelector(".content").style.marginLeft = "250px"; // Adjust content margin
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.querySelector(".content").style.marginLeft = "20px"; // Reset content margin
+    }
+</script>
+
+</body>
+</html>
